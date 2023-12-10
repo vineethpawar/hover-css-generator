@@ -29,9 +29,9 @@ body {
 }
 
 .textGlow {
-  text-shadow: rgba(242, 242, 242, 0.2) 0px 0px 15px;
+  text-shadow: rgba(242, 242, 242, 0.4) 0px 0px 15px;
   transition: 0.8s;
-  animation: textGlow 1s ease-in-out;
+  animation: textGlow 2s ease-in-out reverse;
 }
 
 @keyframes textGlow {
@@ -39,7 +39,7 @@ body {
     text-shadow: rgba(242, 242, 242, 0.4) 0px 0px 15px;
   }
   to {
-    text-shadow: rgba(242, 242, 242, 0.3) 0px 0px 15px;
+    text-shadow: rgba(242, 242, 242, 0.8) 0px 0px 18px;
   }
 }
 
