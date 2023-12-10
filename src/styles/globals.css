@@ -22,7 +22,6 @@ body {
 }
 
 .insetShadow {
-  min-height: 100vh;
   -webkit-box-shadow: inset 0 -5vh 40vh 5vh rgba(0, 0, 0, 0.493);
   -moz-box-shadow: inset 0 -5vh 40vh 5vh rgba(0, 0, 0, 0.493);
   box-shadow: inset 0 -5vh 40vh 5vh rgba(0, 0, 0, 0.493);
