@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <h3 className="p-3 ">
       Made with Next JS, Tailwind and{" "}
-      <FontAwesomeIcon icon={faHeart} color="red" /> by{" "}
+      <FontAwesomeIcon icon={faHeart} color="red" size="sm" /> by{" "}
       <Link
         target="_blank"
         href={"https://vpawar.me"}
