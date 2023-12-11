@@ -33,16 +33,18 @@ body {
 }
 
 .wordGlow:hover {
-  text-shadow: rgba(255, 255, 255, 0.9) 0px 0px 20px;
-  animation: textGlow 0.9s ease-in-out reverse;
+  text-shadow: rgba(255, 255, 255, 0.9) 0px 0px 30px;
+  animation: wordGlow 0.9s ease-in-out reverse;
+  color: antiquewhite;
 }
 
-@keyframes textGlow {
+@keyframes wordGlow {
   from {
-    text-shadow: rgba(255, 255, 255, 0.9) 0px 0px 20px;
+    text-shadow: rgba(255, 255, 255, 0.9) 0px 0px 30px;
+    color: antiquewhite;
   }
   to {
-    text-shadow: rgba(242, 242, 242, 0.4) 0px 0px 15px;
+    text-shadow: rgba(242, 242, 242, 0.6) 0px 0px 45px;
   }
 }
 
@@ -58,7 +60,8 @@ body {
   touch-action: manipulation;
   border-radius: 6px;
   font-weight: bold;
-  padding: 10px 20px;
+
+  @apply px-3 py-2 md:px-5 md:py-2.5;
 }
 
 .primaryBtn:focus {
