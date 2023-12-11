@@ -29,16 +29,20 @@ body {
 
 .textGlow {
   text-shadow: rgba(242, 242, 242, 0.4) 0px 0px 15px;
-  transition: 0.8s;
-  animation: textGlow 2s ease-in-out reverse;
+  transition: 0.7s ease-in;
+}
+
+.wordGlow:hover {
+  text-shadow: rgba(255, 255, 255, 0.9) 0px 0px 20px;
+  animation: textGlow 0.9s ease-in-out reverse;
 }
 
 @keyframes textGlow {
   from {
-    text-shadow: rgba(242, 242, 242, 0.4) 0px 0px 15px;
+    text-shadow: rgba(255, 255, 255, 0.9) 0px 0px 20px;
   }
   to {
-    text-shadow: rgba(242, 242, 242, 0.8) 0px 0px 18px;
+    text-shadow: rgba(242, 242, 242, 0.4) 0px 0px 15px;
   }
 }
 
