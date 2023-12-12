@@ -1,16 +1,13 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { LAYOUTS } from "@/utils/enums";
+import { LAYOUTS } from "@/utils/constants";
 import React from "react";
 interface ILayout {
-  children?: React.JSX.Element;
-  type: LAYOUTS;
+  children?: React.ReactNode;
+  type: keyof typeof LAYOUTS;
 }
-const Layout: React.FC<ILayout> = ({
-  type = LAYOUTS.DEFAULT,
-  children = <></>,
-}) => {
-  if ((type = LAYOUTS.DEFAULT))
+const Layout: React.FC<ILayout> = ({ type = LAYOUTS, children = <></> }) => {
+  if (type === LAYOUTS.DEFAULT)
     return (
       <div>
         <Header />
@@ -18,13 +15,21 @@ const Layout: React.FC<ILayout> = ({
         <Footer />
       </div>
     );
-  if ((type = LAYOUTS.HERO))
+  if (type === LAYOUTS.HERO)
     return (
       <main className={`flex flex-1 flex-col h-screen insetShadow`}>
+        <Header />
         {children}
       </main>
     );
-  return children;
+  if (type === LAYOUTS.ONLY_FOOTER)
+    return (
+      <div>
+        {children}
+        <Footer />
+      </div>
+    );
+  return <>{children}</>;
 };
 
 export default Layout;

@@ -1,4 +1,5 @@
 export enum LAYOUTS {
   DEFAULT = "DEFAULT",
   HERO = "HERO",
+  ONLY_FOOTER = "ONLY_FOOTER",
 }

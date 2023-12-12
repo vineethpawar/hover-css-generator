@@ -17,14 +17,8 @@ const montserrat = Montserrat({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main
-      className={`${montserrat.className} flex flex-1 flex-col h-screen insetShadow`}
-    >
-      <Header />
-      <div className="flex flex-1 h-full">
-        <Component {...pageProps} />
-      </div>
-      <Footer />
+    <main className={montserrat.className}>
+      <Component {...pageProps} />
     </main>
   );
 }
