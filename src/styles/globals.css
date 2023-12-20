@@ -15,6 +15,11 @@
     --background-end-rgb: 100, 100, 100;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -62,7 +67,6 @@ body {
   touch-action: manipulation;
   border-radius: 6px;
   font-weight: bold;
-
   @apply px-3 py-2 md:px-5 md:py-2.5;
 }
 
